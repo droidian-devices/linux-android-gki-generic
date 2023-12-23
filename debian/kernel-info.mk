@@ -166,7 +166,7 @@ BUILD_CROSS = 1
 
 # (Cross-build only) The build triplet to use. You'll probably want to
 # use aarch64-linux-android- if building Android kernels.
-BUILD_TRIPLET = aarch64-linux-android-
+BUILD_TRIPLET = aarch64-linux-gnu-
 
 # (Cross-build only) The build triplet to use with clang. You'll probably
 # want to use aarch64-linux-gnu- here.
