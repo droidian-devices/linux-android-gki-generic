@@ -100,6 +100,11 @@ KERNEL_BOOTIMAGE_DTB_OFFSET =
 # Devices launched with Android 11: version 2 or 3 (GKI)
 KERNEL_BOOTIMAGE_VERSION = 4
 
+# Kernel initramfs compression. Defaults to gzip.
+# All non-gki devices need a gzip (gz) initramfs
+# For devices launched with a GKI kernel it can be either gzip (gz) or lz4 (lz4)
+KERNEL_INITRAMFS_COMPRESSION = lz4
+
 ########################################################################
 # Android verified boot
 ########################################################################
@@ -197,4 +202,4 @@ DEB_BUILD_FOR = arm64
 KERNEL_ARCH = arm64
 
 # Kernel target to build
-KERNEL_BUILD_TARGET = Image.lz4
+KERNEL_BUILD_TARGET = Image
